@@ -1,0 +1,15 @@
+{
+  "TT_IoT": {
+    "DEN": "7",
+    "DEN_NGU": "OFF",
+    "DO_AM": 1,
+    "GAS": 1,
+    "LOA": "OFF",
+    "MAY_LANH": "OFF",
+    "NHIET_DO": 1,
+    "RADIO": "OFF",
+    "SWITCH": "ON",
+    "THOI_TIET": "Cloudy",
+    "TOASTER": "OFF"
+  }
+}

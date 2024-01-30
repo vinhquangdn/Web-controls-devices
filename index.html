@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarthome</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class = "banner">
+        
+        <div class = "bodyweb">
+            <div class = "header">
+                <a style = "text-decoration: none" href = "index.html">Smarthome</a>
+            </div>
+
+            <div class = "main">
+                <div class = "menu">
+                    <div class = "searchbar">
+                        <p style="color:black">
+                            <font size = "4">WELCOME</font>
+                        </p>
+                    </div>
+                    <div class = "livingroom">
+                       <a href = "livingroom.html" >
+                            <img src = "https://bom.so/FBifrW">
+                       </a> 
+                    </div>
+                    
+                    <div class = "bedroom">
+                        <a href = "bedroom.html" >
+                            <img src = "https://bom.so/lniYP4">
+                       </a> 
+                    </div>
+                    
+                    <div class = "kitchen">
+                        <a href = "kitchen.html" >
+                            <img src = "https://bom.so/5KhMI0">
+                       </a> 
+                    </div>
+                </div>
+
+                <div class = "content">
+                    <div class = "contenttop">
+                        <div class = "display1">
+                            
+                        </div>
+                        <div class = "display2">
+                            <div class = "wrapper">
+                                <i id = "left" class = "fa-solid fa-angle-left"></i>
+                                    <div class = "carousel">
+                                        <img src ="/images/img-1.jpg" alt = "img" draggable = "false"> 
+                                        <img src ="/images/img-2.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-3.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-4.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-5.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-6.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-7.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-8.jpg" alt = "img" draggable = "false">
+                                        <img src ="/images/img-9.jpg" alt = "img" draggable = "false">
+                                    </div>
+                                <i id = "right" class = "fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "contentbottom">
+                        <div class = "device1">
+                            <!--div class = "quat">
+                                <img id = "q01_img"  src = "./Img/fanoff.png" alt = "img" style = "width:80%">
+                                <div class = btn-quat>Quạt &emsp;  
+                                    <button id = "q01_on">ON</button>
+                                    <button id = "q01_off">OFF</button>
+                                </div>								
+                            </!--div-->
+                            <div class="den">
+                                <img id="den_02" src="./img/light_bulb_on.png" alt="Card image" style="width: 40%; opacity: 0.5;">
+                                <!--div>
+                                    <div id="sliderNgangValue">5</div>
+                                    <input type="range" min="0" max="10" value="5" class="slider" id="sliderNgangId">
+                                </!--div-->
+                            </div>
+                        </div>
+                        <div class = "device2">
+                            <div class = "radio">
+                                <img id = "r01_img"  src = "./Img/radio_off.png" alt = "img" style = "width:70%">
+                                <!--div>
+                                    <button id = "r01_on">ON</button>
+                                    <button id = "r01_off">OFF</button>
+                                </!--div-->									
+                            </div>
+                        </div>
+                        <div class = "device3">
+                            <div class = "may-lanh">
+                                <img id="ml01_img" src="./Img/ml_off.png" alt = "img" style="width: 80%">
+                                <!--div>
+                                    <button id = "ml01_on">ON</button>
+                                    <button id = "ml01_off">OFF</button>
+                                </!--div-->
+                            </div> 
+                        </div>
+                        <div class = "device4">
+                            <div class = "den-ngu">
+                            <img id="d01_img" src="./Img/lamp_off.png" alt = "img" style="width:80%">
+                                <!--div>
+                                    <button id = "d01_on">ON</button>
+                                    <button id ="d01_off">OFF</button>
+                                </!--div-->
+                            </div>
+                        </div>
+                        <div class = "device5">
+                            <div class = "loa">
+                                <img id="l01_img" src="./Img/loa_off.png" alt = "img" style="width: 80%">
+                                <!--div>
+                                    <button id = "l01_on">ON</button>
+                                    <button id = "l01_off">OFF</button>
+                                </!--div-->
+                            </div> 
+                        </div>
+                        <div class = "device6">
+                            <div class = "toaster">
+                                <img id="t01_img" src="./Img/toaster_off.png" alt = "img" style="width: 80%">
+                                <!--div>
+                                    <button id = "t01_on">ON</button>
+                                    <button id = "t01_off">OFF</button>
+                                </!--div-->     
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer"></div>
+
+        </div>   
+    </div>
+<script>
+
+            const carousel = document.querySelector(".carousel"),
+            firstImg = carousel.querySelectorAll("img") [0];
+            arrowIcons = document.querySelectorAll(".wrapper i");
+
+            let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+
+
+            const showHideIcons = () => {
+                let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+                arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" :"block";
+                arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" :"block";
+
+            }
+
+            arrowIcons.forEach(icon => {
+                icon.addEventListener("click", () => {
+                    let firstImgWidth = firstImg.clientWidth + 14;
+                    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+                    setTimeout (() => showHideIcons(), 60);
+                });
+            });
+            const autoSlide = () => {
+                if(carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)){
+                    return;
+                }
+                positionDiff = Math.abs(positionDiff);
+                let firstImgWidth = firstImg.clientWidth + 14;
+                let valDifference = firstImgWidth - positionDiff;
+                if(carousel.scrollLeft > prevScrollLeft){
+                    return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+                }
+                carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            }
+
+            const dragStart =(e) => {
+                isDragStart = true;
+                prevPageX = e.pageX || e.touches[0].pageX;
+                prevScrollLeft = carousel.scrollLeft
+                
+            }
+            const dragging = (e) => {
+                if(!isDragStart) return;
+                e.preventDefault();
+                isDragging = true
+                carousel.classList.add("dragging");
+                positionDiff = (e.pageX || e.touches[0].pageX)- prevPageX;
+                carousel.scrollLeft = prevScrollLeft - positionDiff;
+                showHideIcons();
+            }
+
+            const dragStop = () =>{
+                isDragStart = false;
+                carousel.classList.remove("dragging");
+                if(!isDragging) return;
+                isDragging = false;
+                autoSlide();
+            }
+            carousel.addEventListener("mousedown", dragStart);
+            carousel.addEventListener("touchstart", dragStart);
+
+            carousel.addEventListener("mousemove", dragging);
+            carousel.addEventListener("touchmove", dragging);
+
+            carousel.addEventListener("mouseup", dragStop);
+            carousel.addEventListener("mouseleave", dragStop);
+            carousel.addEventListener("touchend", dragStop);
+</script>
+</body>
+</html>

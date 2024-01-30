@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarthome</title>
+    <link rel = "stylesheet" href="kitchen.css">
+</head>
+<body>
+    <div class = "banner">
+        
+        <div class = "bodyweb">
+            <div class = "header">
+                <a style = "text-decoration: none" href = "index.html">Smarthome</a>
+            </div>
+
+            <div class = "main">
+                <div class = "menu">
+                    <div class = "searchbar">
+                        <p style="color:black">
+                            <font size = "4">PHÒNG BẾP</font>
+                        </p>
+                    </div>
+                    <div class = "livingroom">
+                       <a href = "livingroom.html" >
+                            <img src = "https://bom.so/FBifrW">
+                       </a> 
+                    </div>
+                    
+                    <div class = "bedroom">
+                        <a href = "bedroom.html" >
+                            <img src = "https://bom.so/lniYP4">
+                       </a> 
+                    </div>
+                    
+                    <div class = "kitchen">
+                        <a href = "kitchen.html" >
+                            <img src = "https://bom.so/5KhMI0">
+                       </a> 
+                    </div>
+                </div>
+
+                <div class = "content">
+                    <div class = "contenttop">
+                        <div class = "display1">
+                            
+                        </div>
+                        <div class = "display2">
+                                <div class = "sensor1">
+                                    <style>
+                                        .sensor1{
+                                            height: 160px;
+                                            width: 150px;
+                                            border-radius: 28px 28px;
+                                            box-shadow: 2px 2px 2px 2px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+                                        }
+                                    </style>
+                                    <div class = "sensor1_img">
+                                        <style>
+                                            .sensor1_img{
+                                                margin: 10px 0;
+                                                height: 110px;
+                                                width: 110px;
+                                                background-image: url("/img/gas.png");
+                                                background-size: 100px 100px;
+                                                background-position: top ;
+                                                background-repeat: no-repeat;
+                                            }
+                                        </style>
+                                    </div>
+                                    <div class = "sensor1_value">
+                                        <h2><span style="color: red;" id="gas">...</span></h2>
+                                        <style>
+                                            .sensor1_value{
+                                                height: 40px;
+                                                width: 100%;
+                                                background-color:rgb(187, 189, 190);
+                                                border-bottom-left-radius: 28px;
+                                                border-bottom-right-radius: 28px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        </style>   
+                                    </div>
+                                </div>
+                                <div class = "sensor2">
+                                    <style>
+                                        .sensor2{
+                                            height: 160px;
+                                            width: 150px;
+                                            border-radius: 28px 28px;
+                                            box-shadow: 2px 2px 2px 2px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+                                        }
+                                    </style>
+                                    <div class = "sensor2_img">
+                                        <style>
+                                            .sensor2_img{
+                                                margin: 10px 0;
+                                                height: 100px;
+                                                width: 100px;
+                                                background-image: url("/img/temp.png");
+                                                background-size: 100px 100px;
+                                                background-position: top ;
+                                                background-repeat: no-repeat;
+                                            }
+                                        </style>
+                                    </div>
+                                    <div class = "sensor2_value">
+                                        <h2><span style="color: red;" id="nhietdo">...</span> 
+                                            <span style="color: red;"> °C</span>
+                                        </h2>
+                                        <style>
+                                            .sensor2_value{
+                                                height: 40px;
+                                                width: 100%;
+                                                background-color:rgb(187, 189, 190);
+                                                border-bottom-left-radius: 28px;
+                                                border-bottom-right-radius: 28px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        </style>   
+                                    </div>
+                                </div>
+                                <div class = "sensor3">
+                                    <style>
+                                        .sensor3{
+                                            height: 160px;
+                                            width: 150px;
+                                            border-radius: 28px 28px;
+                                            box-shadow: 2px 2px 2px 2px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+                                        }
+                                    </style>
+                                    <div class = "sensor3_img">
+                                        <style>
+                                            .sensor3_img{
+                                                margin: 10px 0;
+                                                height: 100px;
+                                                width: 100px;
+                                                background-image: url("/img/humi.png");
+                                                background-size: 100px 100px;
+                                                background-position: top ;
+                                                background-repeat: no-repeat;
+                                            }
+                                        </style>
+                                    </div>
+                                    <div class = "sensor3_value">
+                                        <h2><span style="color: red;" id="doam">...</span> 
+                                            <span style="color: red;"> %</span>
+                                        </h2>
+                                        <style>
+                                            .sensor3_value{
+                                                height: 40px;
+                                                width: 100%;
+                                                background-color:rgb(187, 189, 190);
+                                                border-bottom-left-radius: 28px;
+                                                border-bottom-right-radius: 28px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        </style>   
+                                    </div>
+                                </div>
+                                <div class = "sensor4">
+                                    <style>
+                                        .sensor4{
+                                            height: 160px;
+                                            width: 150px;
+                                            border-radius: 28px 28px;
+                                            box-shadow: 2px 2px 2px 2px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+                                        }
+                                    </style>
+                                    <div class = "sensor4_img">
+                                        <style>
+                                            .sensor4_img{
+                                                margin: 10px 0;
+                                                height: 100px;
+                                                width: 100px;
+                                                background-image: url("/img/weather.png");
+                                                background-size: 100px 100px;
+                                                background-position: top ;
+                                                background-repeat: no-repeat;
+                                            }
+                                        </style>
+                                    </div>
+                                    <div class = "sensor4_value">
+                                        <h2><span style="color: red;" id="thoitiet">...</span></h2>
+                                        <style>
+                                            .sensor4_value{
+                                                height: 40px;
+                                                width: 100%;
+                                                background-color:rgb(187, 189, 190);
+                                                border-bottom-left-radius: 28px;
+                                                border-bottom-right-radius: 28px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        </style> 
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class = "contentbottom">
+                        <div class = "device1">
+                            <!--div class = "quat">
+                                <img id = "q01_img"  src = "./Img/fanoff.png" alt = "img" style = "width:80%">
+                                <div class = btn-quat>Quạt &emsp;  
+                                    <button id = "q01_on">ON</button>
+                                    <button id = "q01_off">OFF</button>
+                                </div>								
+                            </!--div-->
+                            <div class="den">
+                                <img id="den" src="./img/light_bulb_on.png" alt="Card image" style="width: 40%; opacity: 0.5;">
+                                <div id="SliderNgangValue">5</div>
+                                <input type="range" min="0" max="10" value="5" class="slider" id="SliderNgangId">
+                            
+                            </div>
+                            
+                        </div>
+                        <div class = "device2">
+                            <!--div class = "radio">
+                                <img id = "r01_img"  src = "./img/radio_off.png" alt = "img" style = "width:80%">
+                                <div>
+                                    <button id = "r01_on">ON</button>
+                                    <button id = "r01_off">OFF</button>
+                                </div>			
+                            </!--div-->
+                            <div class = "test">
+                                <div class = "image">
+                                    <img id = "hinhanh" src="./img/radio_off.png"alt="img" style="width: 80%" >
+                                </div>
+                            
+                                <div id = "wrapper">
+                                    <input type = "checkbox" class = "switchtoggle" id = "light-dark">
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                        <div class = "device3">
+                            <div class = "may-lanh">
+                            <img id="ml01_img" src="./Img/ml_off.png" alt = "img" style="width: 80%">
+                            <div>
+                                    <button id = "ml01_on">ON</button>
+                                    <button id = "ml01_off">OFF</button>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class = "device4">
+                            <div class = "den-ngu">
+                            <img id="d01_img" src="./Img/lamp_off.png" alt = "img" style="width:70%">
+                                <div>
+                                    <button id = "d01_on">ON</button>
+                                    <button id ="d01_off">OFF</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "device5">
+                            <div class = "loa">
+                                <img class = "img-loa" id="l01_img" src="./Img/loa_off.png" alt = "img" style="width: 80%" onclick = "changeImage ()">
+                                <!--div>
+                                    <button id = "l01_on">ON</button>
+                                    <button id = "l01_off">OFF</button>
+                                </!--div-->
+                                <div class = "notify"> 
+                                    <h3 style = "color: white;">TOUCH ME</h3>
+                                    <style>
+                                        .notify{
+                                            height: 35px;
+                                            width: 150px;
+                                            background-color:  #343F4F;
+                                            border-radius: 30px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                    </style>
+                                </div>
+                                
+                            </div> 
+                        </div>
+                        <div class = "device6">
+                            <div class = "toaster">
+                                <img id="t01_img" src="./Img/toaster_off.png" alt = "img" style="width: 80%">
+                                <div>
+                                    <button id = "t01_on">ON</button>
+                                    <button id = "t01_off">OFF</button>
+                                </div>     
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer"></div>
+        </div>   
+    </div>
+<script type ="module" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script type ="module" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+<script type = "module" src = "control.js"></script>
+</body>
+</html>
